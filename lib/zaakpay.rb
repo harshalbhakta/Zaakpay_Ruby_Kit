@@ -11,7 +11,7 @@ module Zaakpay
     #sorted_params = self.sort_params(params_hash)
     
     paramsstring = ""
-    sorted_params.each {|key, value|
+    params_hash.each {|key, value|
       paramsstring += "'" + value.to_s + "'"    
     }
     checksum = OpenSSL::HMAC.hexdigest('sha256', Zaakpay::Key, paramsstring)
