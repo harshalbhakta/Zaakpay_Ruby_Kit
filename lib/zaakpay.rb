@@ -2,7 +2,7 @@
 #require 'rack'
 
 module Zaakpay  
-  Key = "Insert secret key here"
+  Key = ENV["ZAAKPAY_KEY"]
 
   # This is where the checksum generation happens
   # arguements: a parameters hash.  
