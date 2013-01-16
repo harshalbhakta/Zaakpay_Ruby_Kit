@@ -1,0 +1,77 @@
+10
+
+dir
+1162
+https://svn.assembla.com/svn/bo9sDM27Cr367keJe5cbCb/merchant_kits/Zaakpay_Ruby_Kit/test
+https://svn.assembla.com/svn/bo9sDM27Cr367keJe5cbCb
+
+
+
+2011-11-15T03:39:29.069742Z
+1162
+utaku
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ba28864b-b13a-4d69-9b8a-c5a5d6b2c975
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2011-11-15T03:37:00.631900Z
+2b8130eb4e1a65bce16e6e0fbe90d447
+2011-11-15T03:39:29.069742Z
+1162
+utaku
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+454
+
+performance
+dir
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

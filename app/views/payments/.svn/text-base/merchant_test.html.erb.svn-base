@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Merchant Site</title>
+</head>
+<body>
+
+<center>
+<form action="/post_to_zaakpay" method="post">
+<table width="600px;">
+
+	<tr>
+		<td colspan="2" align="center" valign="middle">This Page is for Testing purpose and behaves like merchant input page</td>
+	</tr>
+	
+  <tr>
+    <td width="50%" align="center" valign="middle">Merchant Identifier :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "merchantIdentifier", "b19e8f103bce406cbd3476431b6b7973" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">ICICI Merchant Id :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "iciciMerchantId", "00005181" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Order Id :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "orderId" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">return url :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "returnUrl" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer Email :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerEmail", "a@b.com" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer First Name :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerFirstName", "kumar" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer Last Name :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerLastName", "prasant" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer Address :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerAddress", "lsa" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer City :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerCity", "noida" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer State :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerState", "u.p" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer Country :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerCountry", "India" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer Pincode :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerPincode", "201012" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Buyer Phone No :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "buyerPhoneNumber", "9871041425" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Txntype :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "txnType", "1" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Zppayoption :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "zpPayOption", "1" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Mode :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "mode", "1" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Currency :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "currency", "rupee"%></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Amount In Paisa :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "amount", "200000" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">IPaddress :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "merchantIpAddress", "127.0.0.1" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Purpose :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "purpose", "1" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Product Description :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "productDescription", "test product" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Product Description :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "product1Description" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Product Description :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "product2Description" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Product Description :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "product3Description" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Product Description :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "product4Description" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Ship To Address :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "shipToAddress" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Ship To City :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "shipToCity" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Ship To State :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "shipToState" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Ship To Country :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "shipToCountry" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Ship To Pincode :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "shipToPincode" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Ship To Phone Number :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "shipToPhoneNumber" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Ship To Firstname :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "shipToFirstname" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Ship To Lastname :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "shipToLastname" %></td>
+  </tr>
+
+  <tr>
+    <td width="50%" align="center" valign="middle">Txn Date :</td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "txnDate", "2011-08-30" %> should be in format "yyyy-mm-dd" </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" width="100%" align="center" valign="middle"><%= submit_tag "submit" %></td>
+  </tr>
+
+</form>
+</center>
+</body>
+</html>
