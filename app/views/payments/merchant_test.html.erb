@@ -20,13 +20,8 @@
   </tr>
 
   <tr>
-    <td width="50%" align="center" valign="middle">ICICI Merchant Id :</td>
-    <td width="50%" align="center" valign="middle"><%= text_field_tag "iciciMerchantId", "00005181" %></td>
-  </tr>
-
-  <tr>
     <td width="50%" align="center" valign="middle">Order Id :</td>
-    <td width="50%" align="center" valign="middle"><%= text_field_tag "orderId" %></td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "orderId", Time.current.strftime("%Y%m%d%H%M%S").to_i %></td>
   </tr>
 
   <tr>
@@ -91,7 +86,7 @@
 
   <tr>
     <td width="50%" align="center" valign="middle">Mode :</td>
-    <td width="50%" align="center" valign="middle"><%= text_field_tag "mode", "1" %></td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "mode", "0" %></td>
   </tr>
 
   <tr>
@@ -181,7 +176,7 @@
 
   <tr>
     <td width="50%" align="center" valign="middle">Txn Date :</td>
-    <td width="50%" align="center" valign="middle"><%= text_field_tag "txnDate", "2011-08-30" %> should be in format "yyyy-mm-dd" </td>
+    <td width="50%" align="center" valign="middle"><%= text_field_tag "txnDate", Time.current.strftime("%Y-%m-%d").to_s %> should be in format "yyyy-mm-dd" </td>
   </tr>
 
   <tr>
