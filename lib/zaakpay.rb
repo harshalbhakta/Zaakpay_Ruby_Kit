@@ -13,9 +13,7 @@ module Zaakpay
     params_hash.each {|key, value|
       paramsstring += "'" + value.to_s + "'"    
     }
-    
-    Rails.logger.info("paramsstring = " + paramsstring)
-    
+   
     checksum = OpenSSL::HMAC.hexdigest('sha256', Zaakpay::Key, paramsstring)
   end
   
@@ -76,7 +74,6 @@ module Zaakpay
     
     filtered_params_hash = {}
     params_hash.each {|key, value|
-      Rails.logger.info("key = " + key.to_s)
       if supported_params.include? key.to_s
         filtered_params_hash[key] = params_hash[key]
       end

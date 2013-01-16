@@ -7,6 +7,11 @@ class PaymentsController < ApplicationController
   
   # POST /post_to_zaakpay
   def post_to_zaakpay
+    
+    # Adding orderId to params.
+    # You can add orderId from database here.
+    params.merge!(:orderId => Time.current.strftime("%Y%m%d%H%M%S").to_i)
+    
     zr = Zaakpay::Request.new(params) 
     @zaakpay_data = zr.all_params   
     render :layout => false    
